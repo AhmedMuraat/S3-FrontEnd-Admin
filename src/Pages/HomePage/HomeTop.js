@@ -4,7 +4,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import CustomCard from "../../Components/CustomCardsSong"
-import {serverSideVariable1} from "../../EnvVariable/EnvVariable"
+import { serverSideVariable1 } from "../../../EnvVariable/EnvVariable";
 
 export function HomeTop() {
     const [Data, setGenreData] = useState(0);

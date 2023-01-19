@@ -2,7 +2,7 @@ import { Col, Row } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import AlbumCard from "../Components/CustomCards"
-import {serverSideVariable1} from "../../EnvVariable/EnvVariable"
+import { serverSideVariable1 } from "../../EnvVariable/EnvVariable";
 
 function CardRow({ genre }) {
 
