@@ -4,7 +4,7 @@ import React from "react";
 export function Home() {
 
   return (
-    <div>
+    <div data-testid="HomeTest">
       <h1 className="text-center">Welcome admin</h1>
     </div>
   );
