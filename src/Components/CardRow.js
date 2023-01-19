@@ -2,6 +2,7 @@ import { Col, Row } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import AlbumCard from "../Components/CustomCards"
+import {serverSideVariable1} from "../../EnvVariable/EnvVariable"
 
 function CardRow({ genre }) {
 
@@ -10,7 +11,7 @@ function CardRow({ genre }) {
         const getData = async () => {
             var config = {
                 method: "get",
-                url: "https://localhost:7125/GetAlbumFromGenre?genreId=" + genre.id,
+                url: serverSideVariable1()+ "/GetAlbumFromGenre?genreId=" + genre.id,
                 headers: {
                     Authorization:
                         "Bearer " + JSON.parse(localStorage.getItem("Token")).accessToken,

@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Button, Table } from "react-bootstrap";
+import {serverSideVariable1} from "../../EnvVariable/EnvVariable"
 
 export function Albums() {
     const [finaldata, setGenreData] = useState(0);
@@ -10,7 +11,7 @@ export function Albums() {
         const getData = async () => {
             var configGenre = {
                 method: "get",
-                url: "https://localhost:7125/api/Albums/GetAllAlbums",
+                url: serverSideVariable1()+ "/api/Albums/GetAllAlbums",
                 headers: {
                     "Authorization": "Bearer " + JSON.parse(localStorage.getItem("Token")).accessToken
                 }

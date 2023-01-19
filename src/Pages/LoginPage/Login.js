@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import axios from "axios";
+import {serverSideVariable1} from "../../EnvVariable/EnvVariable"
 
 export function Login() {
  
@@ -25,7 +26,7 @@ export function Login() {
 
     var config = {
       method: "post",
-      url: "https://localhost:7125/LoginUser\n",
+      url: serverSideVariable1() + "/LoginUser",
       headers: {
         "Content-Type": "application/json",
       },

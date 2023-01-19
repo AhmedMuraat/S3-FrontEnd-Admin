@@ -1,10 +1,10 @@
-import BigCarousel from "../../Components/BigCarousel";
 import Row from "react-bootstrap/Row";
 //import PostService from "../../services/post.service";
 import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import CustomCard from "../../Components/CustomCardsSong"
+import {serverSideVariable1} from "../../EnvVariable/EnvVariable"
 
 export function HomeTop() {
     const [Data, setGenreData] = useState(0);
@@ -13,7 +13,7 @@ export function HomeTop() {
         const getData = async () => {
             var configGenre = {
                 method: "get",
-                url: "https://localhost:7125/api/Songs/top10songsnewestsongs",
+                url: serverSideVariable1()+ "/api/Songs/top10songsnewestsongs",
                 headers: {
                     Authorization:
                         "Bearer " + JSON.parse(localStorage.getItem("Token")).accessToken,
