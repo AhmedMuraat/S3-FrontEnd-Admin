@@ -7,6 +7,7 @@ const BigCarousel = ({ Contents }) => {
         <Carousel className='w-100 mt-3'>
             <Carousel.Item class>
                 <img
+                    alt='picture'
                     className="d-block w-100"
                     style={{borderRadius: "50px"}}
                     src={"https://i.pinimg.com/originals/86/2d/17/862d17ac5a9f3330bfa43e16d9485d29.jpg"}

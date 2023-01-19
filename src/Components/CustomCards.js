@@ -1,5 +1,5 @@
 import Card from "react-bootstrap/Card";
-import { CardActionArea, CardActions } from '@mui/material';
+import { CardActionArea } from '@mui/material';
 import Col from "react-bootstrap/Col";
 
 

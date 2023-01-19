@@ -1,8 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import CustomCards from "../../Components/CustomCards"
-import { Button, Row, Table } from "react-bootstrap";
+import { Button, Table } from "react-bootstrap";
 
 export function Albums() {
     const [finaldata, setGenreData] = useState(0);

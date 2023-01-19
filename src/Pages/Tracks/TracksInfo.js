@@ -1,30 +1,30 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 import axios from "axios";
-import { Button, Table } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 
 
 export function TracksInfo() {
 
-  const Add = async () => {
-    let config = {
-      method: 'post',
-      url: 'https://localhost:7125/api/Songs',
-      headers: {
-        Authorization:
-          "Bearer " + JSON.parse(localStorage.getItem("Token")).accessToken,
-        "Content-Type": "application/json",
-      }
-    };
+  // // const Add = async () => {
+  // //   let config = {
+  // //     method: 'post',
+  // //     url: 'https://localhost:7125/api/Songs',
+  // //     headers: {
+  // //       Authorization:
+  // //         "Bearer " + JSON.parse(localStorage.getItem("Token")).accessToken,
+  // //       "Content-Type": "application/json",
+  // //     }
+  // //   };
 
-    axios(config)
-      .then(function (response) {
-        //console.log(JSON.stringify(response.data));
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-  };
+  //   axios(config)
+  //     .then(function (response) {
+  //       //console.log(JSON.stringify(response.data));
+  //     })
+  //     .catch(function (error) {
+  //       console.log(error);
+  //     });
+  // };
 
   return (
 

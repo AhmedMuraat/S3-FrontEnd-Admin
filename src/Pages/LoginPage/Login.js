@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
@@ -6,10 +5,7 @@ import Col from "react-bootstrap/Col";
 import axios from "axios";
 
 export function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  const navigate = useNavigate();
+ 
 
   const handleLogin = async () => {
     console.log("dma");

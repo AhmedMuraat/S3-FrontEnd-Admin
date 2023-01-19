@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
-import axios, * as others from 'axios';
+//import axios, * as others from 'axios';
 
 
 export function Register() {

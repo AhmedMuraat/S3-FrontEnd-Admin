@@ -1,6 +1,3 @@
-import BigCarousel from "../../Components/BigCarousel";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 //import PostService from "../../services/post.service";
 import React from "react";
 
