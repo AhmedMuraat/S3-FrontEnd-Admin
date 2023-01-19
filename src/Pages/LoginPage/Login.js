@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import axios from "axios";
-import { serverSideVariable1 } from "../../../EnvVariable/EnvVariable";
+import { serverSideVariable1 } from "../../EnvVariable/EnvVariable";
 
 export function Login() {
  

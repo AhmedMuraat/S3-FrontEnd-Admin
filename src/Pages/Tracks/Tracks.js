@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Button, Table } from "react-bootstrap";
-import { serverSideVariable1 } from "../../../EnvVariable/EnvVariable";
+import { serverSideVariable1 } from "../../EnvVariable/EnvVariable";
 
 export function Tracks() {
     const [finaldata, setGenreData] = useState(0);
