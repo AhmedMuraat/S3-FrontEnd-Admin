@@ -34,7 +34,7 @@ export function Tracks() {
     const Remove = (id) => {
         let configGenre = {
             method: "post",
-            url: "https://localhost:7125/api/Songs/RemoveSong?id=" + id,
+            url: serverSideVariable1()+"/api/Songs/RemoveSong?id=" + id,
             headers: {
                 'Authorization': 'Bearer ' + JSON.parse(localStorage.getItem("Token")).accessToken
             }
@@ -53,7 +53,7 @@ export function Tracks() {
     const Publish = (id) => {
         var configGenre = {
             method: "post",
-            url: "https://localhost:7125/api/Songs/PublishSong?id=" + id,
+            url: serverSideVariable1()+"/api/Songs/PublishSong?id=" + id,
             headers: {
                 Authorization:
                     "Bearer " + JSON.parse(localStorage.getItem("Token")).accessToken,

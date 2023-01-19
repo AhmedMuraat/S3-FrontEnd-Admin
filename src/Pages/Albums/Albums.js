@@ -32,7 +32,7 @@ export function Albums() {
     const Remove = (id) => {
         let configGenre = {
             method: "post",
-            url: "https://localhost:7125/api/Albums/RemoveAlbum?id=" + id,
+            url: serverSideVariable1()+"/api/Albums/RemoveAlbum?id=" + id,
             headers: {
                 'Authorization': 'Bearer ' + JSON.parse(localStorage.getItem("Token")).accessToken
             }
@@ -51,7 +51,7 @@ export function Albums() {
     const Publish = (id) => {
         var configGenre = {
             method: "post",
-            url: "https://localhost:7125/api/Albums/PublishAlbum?id=" + id,
+            url: serverSideVariable1()+"/api/Albums/PublishAlbum?id=" + id,
             headers: {
                 Authorization:
                     "Bearer " + JSON.parse(localStorage.getItem("Token")).accessToken,
